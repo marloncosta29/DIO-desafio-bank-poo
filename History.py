@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 
 
 class History:
@@ -12,7 +12,7 @@ class History:
         self._transactions.append(
             {
                 "tipo": transaction.__class__.__name__,
-                "valor": transaction.valor,
+                "valor": transaction.value,
                 "data": datetime.now().strftime("%d-%m-%Y %H:%M:%s")
             }
         )

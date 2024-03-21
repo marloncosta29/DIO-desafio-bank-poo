@@ -6,7 +6,7 @@ class Account:
         self._number = number
         self._agency = "0001"
         self._customer = customer
-        self._history = History
+        self._history = History()
     
     @classmethod
     def new_account(cls, customer, number):

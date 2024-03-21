@@ -6,11 +6,11 @@ class Deposit(Transaction):
         self._value = value
     
     @property
-    def valor(self):
-        return self._4
+    def value(self):
+        return self._value
     
     def register(self, account: Account):
         success_transaction = account.deposit(self.value)
 
         if success_transaction:
-            account.history.add_transaction(self=self)
+            account.history.add_transaction(self)
